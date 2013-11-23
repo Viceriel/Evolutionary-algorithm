@@ -308,7 +308,7 @@ int input(void){
         printf("Nevhodny parameter, opakuj");
         getchar();
         system("cls");
-        input();}
+        n=input();}
     
     return n;}
 
