@@ -303,7 +303,7 @@ int input(void){
     printf("Zadaj pocet jedincov:\n");
     scanf("%d", &n);
     getchar();
-    if((n<10) || (n>100)){
+    if((n<10) && (n>100)){
         system("cls");
         printf("Nevhodny parameter, opakuj");
         getchar();
