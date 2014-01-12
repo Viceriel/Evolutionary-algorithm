@@ -13,7 +13,7 @@
  * 
  */
 int main() {
-    int i,j,n,g=1;
+    int i,j,g=1;
     char **c;
     char **b;
     INPUT *p;
