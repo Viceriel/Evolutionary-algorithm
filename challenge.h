@@ -7,12 +7,18 @@
 
 #ifndef CHALLENGE_H
 #define	CHALLENGE_H
-char **generatorik(int);
-char **fitness(int, char**);
-char **natural_selection(int, char**);
-char **mutation(int, char**);
-char **natural_selection_time_to_die(int, char **, char**);
-int input(void);
+typedef struct
+{   
+    int count;
+    int number;
+    char *word;
+}INPUT;
+INPUT *input(void);
+char **generatorik(INPUT*);
+char **fitness(INPUT*, char**);
+char **natural_selection(INPUT*, char**);
+char **mutation(INPUT*, char**);
+char **natural_selection_time_to_die(INPUT*, char **, char**);
 
 
 #endif	/* CHALLENGE_H */
